@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TripBuddy</string>
+
+    <string-array name="activities">
+        <item>Select Item</item>
+        <item>Hiking-R500</item>
+        <item>Sightseeing- R200</item>
+        <item>Dining- R450</item>
+        <item>Museum tour- R300</item>
+        <item>Beach day- R100</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/lavender"
+    android:layout_height="match_parent"
+    tools:context=".FullScreen">
+
+
+    <ImageView
+        android:id="@+id/fullView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/MStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/MStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="604dp"
+        android:backgroundTint="@color/indigo"
+        android:text="Start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:backgroundTint="@color/indigo"
+        android:text="Pause"
+        app:layout_constraintStart_toEndOf="@id/MStart"
+        app:layout_constraintTop_toTopOf="@id/MStart" />
+
+    <Button
+        android:id="@+id/MStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/indigo"
+        android:text="Stop"
+        app:layout_constraintStart_toEndOf="@id/Pause"
+        app:layout_constraintTop_toTopOf="@id/MStart" />
+
+    <Button
+        android:id="@+id/SaveGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/indigo"
+        android:text="Save To Gallery"
+        tools:layout_editor_absoluteX="-54dp"
+        tools:layout_editor_absoluteY="667dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    tools:context=".Registration">
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="318dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:text="Registration"
+        android:textColor="@color/indigo"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+    android:id="@+id/Name"
+    android:layout_width="403dp"
+    android:layout_height="58dp"
+    android:ems="10"
+    android:hint="Enter name:"
+    android:inputType="text"
+    android:textSize="24sp"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="130dp"
+        app:layout_constraintTop_toBottomOf="@id/reg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <EditText
+        android:id="@+id/RegMail"
+        android:layout_width="398dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Enter e-mail:"
+        android:inputType="textEmailAddress"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Name" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="405dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegMail" />
+
+    <EditText
+        android:id="@+id/RegPassword"
+        android:layout_width="406dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Enter password:"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="147dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/indigo"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/lavender"
+    android:layout_height="match_parent"
+    tools:context=".MemoryEdit">
+<TextView
+    android:id="@+id/Memo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Memory"
+    android:textStyle="bold"
+    android:textColor="@color/indigo"
+    android:textSize="30dp"
+    android:textAlignment="center"
+    android:layout_marginBottom="23dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/MemoryTxt"/>
+
+    <EditText
+        android:id="@+id/MemoryTxt"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="80dp"
+        android:gravity="top"
+        android:hint="Write your memory"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/DBMemoryImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Memory Image"
+        app:layout_constraintTop_toBottomOf="@id/MemoryTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerMusic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/DBMemoryImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/SVMemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="SAVE MEMORY"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMusic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/TrackT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="TRACK TRIP"
+        app:layout_constraintTop_toBottomOf="@+id/SVMemo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/Set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="SETTINGS"
+        app:layout_constraintTop_toBottomOf="@+id/TrackT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

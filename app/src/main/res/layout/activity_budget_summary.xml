@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    tools:context=".BudgetSummary">
+
+
+    <TextView
+        android:id="@+id/Budget"
+        android:layout_width="176dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="676dp"
+        android:text="Budget"
+        android:textColor="@color/indigo"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/FDiscount"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/FSubtotal"
+        android:layout_width="396dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        android:text="Subtotal: R0.00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Budget" />
+
+    <TextView
+        android:id="@+id/FDiscount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Discount: R0.00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FSubtotal" />
+
+    <TextView
+        android:id="@+id/FinalBudget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Final Budget: R0.00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FDiscount" />
+
+    <Button
+        android:id="@+id/CTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:backgroundTint="@color/indigo"
+        android:text="Confirm Trip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FinalBudget" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
